@@ -1,0 +1,45 @@
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  display: block;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+.navcolor {
+  color: white;
+  font-weight: 900;
+  font-family: "Roboto", "Source Sans Pro";
+}
+
+img {
+  margin-top: 1em;
+  float: left;
+  width: 35px;
+}
+h3 {
+  float: right;
+  color: white;
+}
+#rightNav {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: white;
+  font-family: "Roboto", "Source Sans Pro";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 38%;
+}

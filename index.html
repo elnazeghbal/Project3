@@ -17,6 +17,125 @@
     })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   </script>
   <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair Display"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+    rel="stylesheet"
+  />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="chat.js"></script>
+<form id="RegisterUserForm" action="connect.php" method="post"></form>
+
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #acd4dd;
+      color: white;
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+    }
+
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: white;
+      color: white;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $(".hide").click(function () {
+        $(".p1").slideUp(1500);
+      });
+    });
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-168986272-1");
+  </script>
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -32,23 +151,80 @@
   <body>
     <header>
       <nav id="navbar">
-        <div id="leftNav">
-          <img src="images/browser.png" />
-
-          <h3>Browser</h3>
+        <div style="width: 15%;">
+          <img src="images/hulu.png" class="huluimg" />
+        </div>
+        <div id="browser" style="width: 15%;">
+          <img src="images/browser.png" class="browserimg" />
+          <h3>BROWSE</h3>
+        </div>
+        <div style="width: 15%;">
+          <img src="images/tick1.png" class="stuff" />
+          <h2>MY STUFF</h2>
+        </div>
+        <div style="width: 15%;">
+          <img src="images/huloop.png" class="huloop" />
+          <h1>HULOOP</h1>
         </div>
         <div id="rightNav">
-          <p2>
-            <a href="index.html" class="navcolor">WORK</a>
-          </p2>
-          <p2>
-            <a href="index.html" class="navcolor">ABOUT</a>
-          </p2>
-          <p2>
-            <a href="index.html" class="navcolor">CONTACT</a>
-          </p2>
+          <div>
+            <img src="images/search.png" class="search" />
+            <h4>
+              <a href="index.html" class="navcolor">SEARCH</a>
+            </h4>
+          </div>
+          <div>
+            <img src="images/Nick.png" class="nick" />
+            <h4>
+              <a href="index.html" class="navcolor">NICK</a>
+            </h4>
+          </div>
         </div>
       </nav>
     </header>
+    <section id="containerPic">
+      <div class="blackBox">
+        <img src="images/nightSky.jpg" alt="skynight" id="skyimg">
+    </div>
+          <div id="page-wrap">
+            <p id="name-area"></p>
+          
+            <div id="chat-wrap">
+                <div id="chat-area">
+
+                </div>
+            </div>
+
+            <form id="send-message-area">
+              <p>Your message:</p>
+              <textarea id="sendie" maxlength="100"></textarea>
+            </form>
+          
+        </div>
+        <!-- <img
+          src="images/watchmen1.jpg"
+          alt="picture"
+          width="40%"
+          height="300px"
+        /> -->
+        <div id="center">
+         
+                <img src="images/hulu.white.png" class="huluP" width="12%">
+          <p>Brought to you by</p>
+          
+        
+          <h5>HULOOP</h5>
+          <p>Huloop is a new calendaring feature on Hulu that allows</p>
+          <p>
+you to schedule watch parties with your loved ones.
+          </p>
+          <p>
+            Huloop syncs with your calendar and creates a
+          </p>
+          <p>personalized event to share with your family and friends.</p>
+        </div>
+      
+    </section>
+    <section></section>
   </body>
 </html>

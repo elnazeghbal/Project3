@@ -8,20 +8,32 @@ header {
   top: 0px;
   background-color: black;
   display: block;
+  font-family: "Roboto", "Source Sans Pro";
+  display: block;
 }
 
 #navbar {
   display: flex;
   flex-direction: row;
-  margin: 0px 4%;
-}
-.navcolor {
-  color: white;
-  font-weight: 900;
+  margin: 0px 1%;
   font-family: "Roboto", "Source Sans Pro";
 }
 
-img {
+#hulu {
+  float: left;
+  margin-right: -10em;
+  margin-bottom: 0.5em;
+}
+.huluimg {
+  width: 70%;
+
+  margin-top: 0.5em;
+}
+#browser {
+  float: left;
+}
+
+.browserimg {
   margin-top: 1em;
   float: left;
   width: 35px;
@@ -29,6 +41,54 @@ img {
 h3 {
   float: right;
   color: white;
+  font-size: small;
+  margin-top: 1.75em;
+  margin-right: 2.9em;
+}
+.stuff {
+  margin-top: 1em;
+  float: left;
+  width: 35px;
+}
+h2 {
+  float: right;
+  color: white;
+  font-size: small;
+  margin-top: 1.75em;
+  margin-right: 2.4em;
+}
+.huloop {
+  margin-top: 1em;
+  float: left;
+  width: 26px;
+  margin-left: 0.5em;
+}
+h1 {
+  float: right;
+  color: white;
+  font-size: small;
+  margin-top: 1.75em;
+  margin-right: 2.8em;
+}
+.search {
+  margin-top: 0.75em;
+  float: left;
+  width: 20px;
+}
+.nick {
+  margin-top: 0.75em;
+  float: left;
+  width: 20px;
+}
+h4 {
+  margin-top: 1em;
+  margin-left: 2.5em;
+}
+.navcolor {
+  color: white;
+  font-weight: 800;
+  font-family: "Roboto", "Source Sans Pro";
+  margin-top: 7em;
 }
 #rightNav {
   display: flex;
@@ -43,3 +103,121 @@ h3 {
   letter-spacing: 1px;
   margin-left: 38%;
 }
+/* CONTAINER */
+#containerPic {
+  
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.blackBox {
+
+  width: 400px;
+  height: 300px;
+  
+  background-color: black;
+
+  float: right;
+  margin-left: 70em;
+  margin-top: 10em;
+}
+
+
+#center {
+  position: absolute;
+  color: rgb(10, 10, 10);
+margin-top: -3em;
+  float: left;
+  margin-left: 2em;
+}
+
+
+.huluP{
+  color: #1CE783;
+  margin-left: 12.5em;
+  margin-top: 10em;
+  
+}
+p {
+  font-size: large;
+}
+h5 {
+  font-size: 60px;
+  font-weight: 400px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#skyimg{
+  float: center;
+  width: 300px;
+}
+
+/* send Message */
+*                              
+ { margin: 0;
+   padding: 0; }
+body {                         
+   font: 12px "Lucida Grande", Sans-Serif;
+    background: url(images/bg.png);
+   }
+h6                           
+{ color: #fa9f00; 
+  font: 30px Helvetica, Sans-Serif;
+   margin: 0 0 10px 0;
+   }
+#page-wrap                     
+ { width: 200px; 
+
+  position: relative; 
+  float: right;
+  margin-left: 2em;
+  margin-top: 11em;
+
+}
+
+#chat-wrap                     
+ { border: 1px solid #eee;
+   margin: 0 0 15px 0;
+ }
+#chat-area                     
+ { height: 200px; 
+overflow: auto;
+   border: 1px solid #666; 
+   padding: 20px; 
+   background: black;
+   float: right;
+   }
+#chat-area span               
+  { color: white; 
+    background: #333;
+     padding: 4px 8px;
+      -moz-border-radius: 5px; 
+      -webkit-border-radius: 8px; 
+      margin: 0 5px 0 0; }
+#chat-area p                   
+ { padding: 8px 0; 
+  border-bottom: 1px solid #ccc; }
+
+#name-area                     
+ { position: absolute; 
+  top: 12px;
+   right: 0;
+    color: white;
+     font: bold 12px "Lucida Grande", Sans-Serif; 
+     text-align: right; }   
+#name-area span                
+ { color: #fa9f00; }
+
+#send-message-area p         
+   { float: left; 
+    color: white;
+     padding-top: 27px; 
+     font-size: 14px; }
+#sendie                        
+ { border: 3px solid #999; 
+  width: 200px;
+
+   font: 12px "Lucida Grande", Sans-Serif; 
+   float: right; }

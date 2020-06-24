@@ -120,7 +120,17 @@ function sendChat(message, nickname) {
      });
   });
 <body onload="setInterval('chat.update()', 1000)"></body>
+$(function() {
 
+    $("body").mousewheel(function(event, delta) {
+ 
+       this.scrollLeft -= (delta * 30);
+     
+       event.preventDefault();
+ 
+    });
+ 
+ });
 
 
 

@@ -14,9 +14,11 @@
     href="https://fonts.googleapis.com/css?family=Source Sans Pro"
     rel="stylesheet"
   />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script src="chat.js"></script>
-<form id="RegisterUserForm" action="connect.php" method="post"></form>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="index.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='index.js'></script>
+<form id="RegisterUserForm" action="index.php" method="post"></form>
 
   <style>
     /* The Modal (background) */
@@ -153,7 +155,7 @@
       text-decoration: none;
     }
   </style>
-  <body>
+  <body class="wrapper">
     <header>
       <nav id="navbar">
         <div style="width: 15%;">
@@ -164,11 +166,11 @@
           <h3>BROWSE</h3>
         </div>
         <div style="width: 15%;">
-          <img src="images/tick1.png" class="stuff" />
+          <img src="images/myStufficon.png" class="stuff" />
           <h2>MY STUFF</h2>
         </div>
         <div style="width: 15%;">
-          <img src="images/huloop.png" class="huloop" />
+          <img src="images/huloopIcon.png" class="huloop" />
           <h1>HULOOP</h1>
         </div>
         <div id="rightNav">
@@ -256,10 +258,27 @@
             <button class="hoverButton1">1.FIND HULOOP IN THE TOP NAVIGATION OR WHEN YOU START A VIDEO.</button>
             <button class="hoverButton2">2.SYNC YOUR GOOGLE,OUTLOOK,OR APPLE CALENDAR.</button>
             <button class="hoverButton3">3.SELECT YOUR AVAILABLE DATES AND TIMES.</button>
-            <button class="hoverButton1">4.INVITE GUESTS OR SEND OUT A HYPERLINK TO THE WATCH PARTY.</button>
-            <button class="hoverButton1">5.JOIN THE HULU WATCH PARTY.</button>
+            <button class="hoverButton4">4.INVITE GUESTS OR SEND OUT A HYPERLINK TO THE WATCH PARTY.</button>
+            <button class="hoverButton5">5.JOIN THE HULU WATCH PARTY.</button>
+            <button class="Button6">SCHEDULE WITH HULOOP TODAY.</button>
         </div>
 
+    </section>
+    <section id="watchDirectly">
+        <div id="watchOnhulu">
+            <a href="https://www.hulu.com/welcome" id="huluWebsite">
+            <p id="watch">Watch Directly</p>
+            <p id="watch2">on Hulu.com</p>
+            <p id="watchDescript">Schedule with Huloop seconds right  on the Hulu.com</p>
+            <p id="watchDescript2">website for watch parties happening in a couple minutes</p>
+            <p id="watchDescript3">or a couple months away.</p>
+        </a>
+        </div>
+            <div id="scrollmenu">
+                   <img src="images/watchdirectly2.png">
+                   <img src="images/watchdirectly.png">
+                </div>
+             
     </section>
   </body>
 </html>

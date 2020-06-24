@@ -1,7 +1,8 @@
 body {
   display: block;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Avenir';
 }
 header {
   position: sticky;
@@ -114,7 +115,7 @@ h4 {
 #blackBox {
 
   float: right;
-  margin-left: 70em;
+  margin-left: 50em;
   margin-top: 10em;
 }
 
@@ -124,7 +125,7 @@ h4 {
   color: rgb(10, 10, 10);
 margin-top: 6em;
   float: left;
-  margin-left: 2em;
+  margin-left: 10em;
 }
 
 
@@ -132,7 +133,7 @@ margin-top: 6em;
   color: #1CE783;
  float: right;
  margin-top: 0.1em;
- margin-right: 28em;
+ margin-right: 18.5em;
   width: 50px;
   
 }
@@ -167,10 +168,10 @@ h5 {
 *                              
  { margin: 0;
    padding: 0; }
-body {                         
-   font: 12px "Lucida Grande", Sans-Serif;
+/* body {                         
+  font-family: 'Avenir';
     background: url(images/bg.png);
-   }
+   } */
 h6                           
 { color: #fa9f00; 
   font: 30px Helvetica, Sans-Serif;
@@ -181,8 +182,8 @@ h6
 
   position: relative; 
   float: right;
-  margin-left: 2em;
-  margin-top: 11em;
+  margin-left: 0.1em;
+  margin-top: 10em;
   background: black;
 
 }
@@ -195,7 +196,7 @@ h6
    margin: 0 0 15px 0;
  }
 #chat-area                     
- { height: 200px; 
+ { height: 224px; 
 overflow: auto;
    border: 1px solid #666; 
    padding: 20px; 
@@ -229,10 +230,10 @@ overflow: auto;
      padding-top: 27px; 
      font-size: 14px; }
 #sendie                        
- { border: 3px solid #999; 
-  width: 200px;
+ { border: 3px solid black; 
+  width: 196px;
 
-   font: 12px "Lucida Grande", Sans-Serif; 
+   font: 12px "avenir"; 
    float: right; }
 
 
@@ -241,22 +242,22 @@ overflow: auto;
     margin-top: 11em;
   }
   #Mybutton {
-    margin-top: 10px;
-    font-size: 9pt;
     background-color: #1CE783;
-    border: 1px solid #1CE783;
-    width: 300px;
-    letter-spacing: 2px;
+    border: none;
+    color: black;
+    padding: 20px 33px;
+    text-align: left;
+    font-size: 14px;
+    margin: 4px 2px;
+    float: center;
     border-radius: 5px;
-    padding: 10px;
-    align-content: center;
-    margin-bottom: 80px;
+    width: 300px;
     font-weight: 400;
   }
   #buttonColor{
     color: black;
-    font-size: 200;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 400;
 
   }
   #underButton{
@@ -270,10 +271,11 @@ overflow: auto;
     float: left;
     font-size: 20px;
     font-weight: 700;
-    margin-left: -27em;
+    margin-left: -24.3em;
     margin-top: 4em;
   }
   #section2{
+    height: 750px;
     display: flex;
     flex-direction: row;
     margin-top: 10em;
@@ -292,8 +294,8 @@ overflow: auto;
    margin-left: 7em;
  }
  #img4watch{
-   margin-left: 13em;
-   margin-top: 20em;
+   margin-left: 7em;
+   margin-top: 18.5em;
    float: left;
 
  }
@@ -307,12 +309,12 @@ overflow: auto;
 
  }
  #start{
-   margin-left: 4em;
+   margin-left: 0.5em;
   
    font-size: 20px;
  }
  #howtohuloop2{
-   margin-left: 3.5em;
+   margin-left: 0.5em;
   margin-top: 0.3em;
    font-size: 24px;
    font-weight: 900;
@@ -381,3 +383,71 @@ overflow: auto;
     transition: 0.3s;
     float: right;
   }
+  .Button6 {
+    background-color: #1CE783;
+    border: none;
+    color: black;
+    padding: 20px 33px;
+    text-align: left;
+    font-size: 14px;
+    margin: 4px 2px;
+    float: center;
+    border-radius: 5px;
+    width: 300px;
+    font-weight: 400;
+  }
+  #watchDirectly{
+    background-color: black;
+flex-direction: row;
+
+height: 400px;
+  }
+#watchOnhulu{
+  width: 40%;
+  margin-top: 6em;
+  float: left;
+  margin-left: 25em;
+}
+#watch{
+  font-size: 40px;
+  color: #1CE783;
+  font-weight: 600;
+}
+#watch2{
+  margin-top: 0.2em;
+  font-size: 40px;
+  color: #1CE783;
+  font-weight: 600;
+}
+#watchDescript{
+  margin-top: 3em;
+  font-size: 12px;
+  color: white;
+}
+#watchDescript2{
+  margin-top: 0.5em;
+  font-size: 12px;
+  color: white;
+}
+#watchDescript3{
+  margin-top: 0.5em;
+  font-size: 12px;
+  color: white;
+}
+
+
+    /*COMMENT FOR SCROLL PAGES*/
+    #scrollmenu {
+      width: 30%;
+      background-color: black;
+      overflow: auto;
+      white-space: nowrap;
+      float: right;
+      margin-top: -14em;
+      margin-right: 20em;
+  }
+  
+  div.scrollmenu img{
+      display: inline-block;
+  }
+ 

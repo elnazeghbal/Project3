@@ -406,7 +406,7 @@ height: 400px;
   width: 40%;
   margin-top: 6em;
   float: left;
-  margin-left: 25em;
+  margin-left: 22em;
 }
 #watch{
   font-size: 40px;
@@ -421,17 +421,17 @@ height: 400px;
 }
 #watchDescript{
   margin-top: 3em;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
 }
 #watchDescript2{
   margin-top: 0.5em;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
 }
 #watchDescript3{
   margin-top: 0.5em;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
 }
 
@@ -451,3 +451,53 @@ height: 400px;
       display: inline-block;
   }
  
+#sec3{
+background-color: black;
+height: 500px;
+margin-top: -0.3em;
+}
+#calendar{
+  margin-top: 10em;
+  float: left;
+  width: 50%;
+  flex-direction: row;
+}
+.googleCal{
+  margin-left: 15em;
+  width: 12%;
+}
+.outlookCal{
+  margin-top: -1em;
+  margin-left: 3em;
+  width: 12%;
+}
+.appleCal{
+  margin-left: 3em;
+  width: 14%;
+}
+#syncCal{
+  margin-top: 10em;
+  float: right;
+  width: 45%;
+}
+#syncCal1{
+  color: #1CE783;
+  font-size: 40px;
+  font-weight: 600;
+}
+#syncCal2{
+  color: #1CE783;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.syncExp{
+  margin-top: 2em;
+  font-size: 15px;
+  color: white;
+}
+.syncExp2{
+  margin-top: 0.5em;
+  font-size: 15px;
+  color: white;
+}

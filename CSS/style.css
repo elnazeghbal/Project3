@@ -279,7 +279,7 @@ overflow: auto;
     margin-top: 10em;
     background-image: linear-gradient(
       to bottom,
-      rgb(228, 255, 242),
+      rgb(246, 255, 251),
       rgb(213, 255, 234)
     );
 
@@ -309,7 +309,7 @@ overflow: auto;
    font-size: 20px;
  }
  #howtohuloop2{
-   margin-right: -5em;
+   margin-right: 5em;
    float: right;
    font-size: 24px;
    font-weight: 900;

@@ -118,6 +118,26 @@
       background-color: white;
       color: white;
     }
+    .hoverButton1:hover {
+  background-color: #717471;
+  color: white;
+}
+.hoverButton2:hover {
+  background-color: #717471;
+  color: white;
+}
+.hoverButton3:hover {
+  background-color: #717471;
+  color: white;
+}
+.hoverButton4:hover {
+  background-color: #717471;
+  color: white;
+}
+.hoverButton5:hover {
+  background-color: #717471;
+  color: white;
+}
   </style>
   <script>
     $(document).ready(function () {
@@ -183,9 +203,10 @@
       </nav>
     </header>
     <section id="containerPic">
-      <div class="blackBox">
-        <img src="images/nightSky.jpg" alt="skynight" id="skyimg">
-    </div>
+
+      <div id="blackBox">
+        <img src="images/howtohuloop.png" alt="howtohuloop" id="howtohuloop">
+      </div>
           <div id="page-wrap">
             <p id="name-area"></p>
           
@@ -196,7 +217,7 @@
             </div>
 
             <form id="send-message-area">
-              <p>Your message:</p>
+              <p id="message">Your message:</p>
               <textarea id="sendie" maxlength="100"></textarea>
             </form>
           
@@ -209,22 +230,49 @@
         /> -->
         <div id="center">
          
-                <img src="images/hulu.white.png" class="huluP" width="12%">
-          <p>Brought to you by</p>
+                <img src="images/hulu.white.png" class="huluP">
+          <p id="p2">Brought to you by</p>
           
         
-          <h5>HULOOP</h5>
+          <h5 id="h5Huloop">HULOOP</h5>
           <p>Huloop is a new calendaring feature on Hulu that allows</p>
           <p>
-you to schedule watch parties with your loved ones.
+            you to schedule watch parties with your loved ones.
           </p>
           <p>
             Huloop syncs with your calendar and creates a
           </p>
           <p>personalized event to share with your family and friends.</p>
+        
+        
+          <div id="huloopButton">
+           
+            <button id="Mybutton">
+            <a id="buttonColor"
+              href="index.html"
+              >SCHEDULE WITH HULOOP TODAY
+            </a>
+          </button> 
+           </div>
+         <p id="underButton">*Available for subscribers on the following Hulu (no Ads)</p>
+         <p id="underButton2">or Hulu (no Ads) + Live TV*</p>
         </div>
-      
     </section>
-    <section></section>
+    <section id="section2">
+        <div id="picSec2">
+            <img src="images/4-watch(2).png" id="img4watch" width="80%">
+        </div>
+        <div id="rowsec2">
+            <p id="start">Get Started</p>
+            <p id="howtohuloop2">How to Huloop</p>
+        </div>
+        <div id="rowbutton">
+            <button class="hoverButton1">1.FIND HULOOP IN THE TOP NAVIGATION OR WHEN YOU START A VIDEO.</button>
+            <button class="hoverButton2">2.SYNC YOUR GOOGLE,OUTLOOK,OR APPLE CALENDAR.</button>
+            <button class="hoverButton3">3.SELECT YOUR AVAILABLE DATES AND TIMES.</button>
+            <button class="hoverButton1">4.INVITE GUESTS OR SEND OUT A HYPERLINK TO THE WATCH PARTY.</button>
+            <button class="hoverButton1">5.JOIN THE HULU WATCH PARTY.</button>
+        </div>
+    </section>
   </body>
 </html>

@@ -282,13 +282,14 @@ overflow: auto;
       rgb(246, 255, 251),
       rgb(213, 255, 234)
     );
-
   }
+
+  
  #picSec2{
-   float: left;
+  align-items: center;
    width: 50%;
    height: 20%;
-   margin-left: 10em;
+   margin-left: 7em;
  }
  #img4watch{
    margin-left: 13em;
@@ -301,16 +302,18 @@ overflow: auto;
    flex-direction: column;
    margin-top: 9em;
    margin-right: -17em;
+   align-items: center;
+   width: 20%;
 
  }
  #start{
-   margin-right: 5em;
-   float: right;
+   margin-left: 5em;
+  
    font-size: 20px;
  }
  #howtohuloop2{
-   margin-right: 5em;
-   float: right;
+   margin-left: 4em;
+
    font-size: 24px;
    font-weight: 900;
 

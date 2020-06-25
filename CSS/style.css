@@ -1,15 +1,15 @@
 body {
   display: block;
-  /* margin: 0;
-  padding: 0; */
-  font-family: 'Avenir';
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir";
 }
 header {
   position: sticky;
   top: 0px;
   background-color: black;
   display: block;
-  font-family: "Roboto", "Source Sans Pro";
+  font-family: "Avenir";
   display: block;
 }
 
@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0px 1%;
-  font-family: "Roboto", "Source Sans Pro";
+  font-family: "Avenir";
 }
 
 #hulu {
@@ -49,7 +49,7 @@ h3 {
 .stuff {
   margin-top: 1em;
   float: left;
-  width: 35px;
+  width: 31px;
 }
 h2 {
   float: right;
@@ -59,9 +59,9 @@ h2 {
   margin-right: 2.4em;
 }
 .huloop {
-  margin-top: 1em;
+  margin-top: 1.3em;
   float: left;
-  width: 26px;
+  width: 30px;
   margin-left: 0.5em;
 }
 h1 {
@@ -79,7 +79,8 @@ h1 {
 .nick {
   margin-top: 0.75em;
   float: left;
-  width: 20px;
+  width: 22px;
+  margin-right: -5em;
 }
 h4 {
   margin-top: 1em;
@@ -106,9 +107,10 @@ h4 {
 }
 /* CONTAINER */
 #containerPic {
-  
+  width: auto;
   display: flex;
   flex-direction: row;
+  height: 600px;
  
 }
 
@@ -397,6 +399,7 @@ overflow: auto;
     font-weight: 400;
   }
   #watchDirectly{
+    width: auto;
     background-color: black;
 flex-direction: row;
 
@@ -406,7 +409,7 @@ height: 400px;
   width: 40%;
   margin-top: 6em;
   float: left;
-  margin-left: 22em;
+  margin-left: 16em;
 }
 #watch{
   font-size: 40px;
@@ -438,13 +441,13 @@ height: 400px;
 
     /*COMMENT FOR SCROLL PAGES*/
     #scrollmenu {
-      width: 30%;
+      width: 26%;
       background-color: black;
       overflow: auto;
       white-space: nowrap;
       float: right;
       margin-top: -14em;
-      margin-right: 20em;
+      margin-right: 22em;
   }
   
   div.scrollmenu img{
@@ -455,6 +458,7 @@ height: 400px;
 background-color: black;
 height: 500px;
 margin-top: -0.3em;
+width: auto;
 }
 #calendar{
   margin-top: 10em;
@@ -500,4 +504,121 @@ margin-top: -0.3em;
   margin-top: 0.5em;
   font-size: 15px;
   color: white;
+}
+#sec4{
+  background-color: black;
+height: 500px;
+width: auto;
+margin-top: -0.5em;
+}
+#flexCal{
+  float: left;
+width: 30%;
+margin-left: 17em;
+margin-top: 6em;
+}
+#flex1{
+  color: #1CE783;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+#flex2{
+  color: #1CE783;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.flexExp{
+  margin-top: 2em;
+  font-size: 15px;
+  color: white;
+
+}
+.flexExp2{
+  margin-top: 0.5em;
+  font-size: 15px;
+  color: white;
+}
+#calLaptop{
+  margin-right: 1.5em;
+float: right;
+width: 45%;
+margin-top: 4.5em;
+}
+.calLaptopExp{
+  width: 55%;
+}
+#buttonLaptop{
+  background-color: #1CE783;
+  height: 850px;
+  width: auto;
+  margin-top: -0.5em; 
+}
+#tryHuloop{
+  text-align: center;
+
+}
+.tryHuloopExp{
+
+  font-size: 40px;
+  color: black;
+  font-weight: 600;
+}
+#laptop{
+text-align: center;
+margin-top: 5em;
+}
+#laptopimg{
+width: 50%;
+}
+#nextWatchParty{
+  text-align: center;
+  margin-top: 3em;
+}
+#nextWatch{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 33px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  float: center;
+  border-radius: 5px;
+  width: 320px;
+  font-weight: 600; 
+}
+#footer{
+  background-color: black;
+  height: 80px;
+  width: auto;
+  flex-direction: row;
+}
+#footer1 p{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  flex-direction: row;
+  font-size: 12px;
+
+}
+#footer2 p{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  flex-direction: row;
+  font-size: 12px; 
+
+}
+#footerRight p{
+  color: white;
+  float: right;
+  padding: 14px;
+  flex-direction: row;
+  font-size: 12px; 
+  margin-top: -2em;
+  margin-right: 7em;
 }

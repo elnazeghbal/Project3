@@ -59,7 +59,7 @@ h2 {
   margin-right: 2.4em;
 }
 .huloop {
-  margin-top: 1.3em;
+  margin-top: 1.1em;
   float: left;
   width: 30px;
   margin-left: 0.5em;
@@ -166,7 +166,7 @@ h5 {
 
 }
 
-/* send Message */
+/* send Message
 *                              
  { margin: 0;
    padding: 0; }
@@ -174,7 +174,7 @@ h5 {
   font-family: 'Avenir';
     background: url(images/bg.png);
    } */
-h6                           
+/* h6                           
 { color: #fa9f00; 
   font: 30px Helvetica, Sans-Serif;
    margin: 0 0 10px 0;
@@ -186,9 +186,9 @@ h6
   float: right;
   margin-left: 0.1em;
   margin-top: 10em;
-  background: black;
+  background: black; */
 
-}
+/* }
 #message{
   color: #1CE783;
 }
@@ -204,8 +204,8 @@ overflow: auto;
    padding: 20px; 
    background: black;
    float: right;
-   }
-#chat-area span               
+   } */
+/* #chat-area span               
   { color: rgb(32, 31, 31); 
     background: rgb(0, 0, 0);
      padding: 4px 8px;
@@ -224,9 +224,9 @@ overflow: auto;
      font: bold 12px "Lucida Grande", Sans-Serif; 
      text-align: right; }   
 #name-area span                
- { color: #fa9f00; }
+ { color: #fa9f00; } */
 
-#send-message-area p         
+/* #send-message-area p         
    { float: left; 
     color: black;
      padding-top: 27px; 
@@ -236,7 +236,7 @@ overflow: auto;
   width: 196px;
 
    font: 12px "avenir"; 
-   float: right; }
+   float: right; }  */
 
 
   #huloopButton{
@@ -621,4 +621,122 @@ width: 50%;
   font-size: 12px; 
   margin-top: -2em;
   margin-right: 7em;
+}
+
+
+/*CHAT*/
+
+#peopleList{
+  float: right;
+  margin-left: 50em;
+  width: 20%;
+  height: 35%;
+  background-color: white;
+  border-color: #1CE783;
+margin-top: 4em;
+  flex-direction: column;
+}
+.nameAvatar{
+  float: right;
+}
+.avatar1{
+  float: left;
+  width: 30%;
+}
+.avatar2{
+  float: left;
+  width: 40%;
+}
+.avatar3{
+  float: left;
+  width: 40%;
+}
+#img1{
+  width: 50%;
+  flex-direction: row;
+}
+#img2{
+  width: 50%;
+  margin-top: 4em;
+  margin-right: 2em;
+  flex-direction: row;
+}
+#img3{
+width: 50%;
+  margin-top: 9em;
+  margin-right: 2em;
+  flex-direction: row;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

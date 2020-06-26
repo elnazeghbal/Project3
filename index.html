@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app='swankyChat' ng-cloak='true'>
+  <script src="index.js"></script>
   <link href="CSS/style.css" type="text/css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css?family=Playfair Display"
@@ -14,13 +14,17 @@
     href="https://fonts.googleapis.com/css?family=Source Sans Pro"
     rel="stylesheet"
   />
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="index.js"></script>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-<script type='text/javascript' src='index.js'></script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <meta name="author" content="Stephan Soller" />
 <form id="RegisterUserForm" action="index.php" method="post"></form>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
   <style>
+
     /* The Modal (background) */
     .modal {
       display: none; /* Hidden by default */
@@ -36,21 +40,7 @@
       background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     }
 
-    /* Modal Content */
-    .modal-content {
-      position: relative;
-      background-color: #fefefe;
-      margin: auto;
-      padding: 0;
-      border: 1px solid #888;
-      width: 80%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s;
-    }
+
 
     /* Add Animation */
     @-webkit-keyframes animatetop {
@@ -90,21 +80,6 @@
       cursor: pointer;
     }
 
-    .modal-header {
-      padding: 2px 16px;
-      background-color: #acd4dd;
-      color: white;
-    }
-
-    .modal-body {
-      padding: 2px 16px;
-    }
-
-    .modal-footer {
-      padding: 2px 16px;
-      background-color: white;
-      color: white;
-    }
     .hoverButton1:hover {
   background-color: #717471;
   color: white;
@@ -142,6 +117,15 @@
 
     gtag("config", "UA-168986272-1");
   </script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -155,11 +139,13 @@
       text-decoration: none;
     }
   </style>
-  <body class="wrapper">
+  <body translate="no">
     <header>
       <nav id="navbar">
         <div style="width: 15%;">
+          <a href="https://www.hulu.com/welcome">
           <img src="images/hulu.png" class="huluimg" />
+        </a>
         </div>
         <div id="browser" style="width: 15%;">
           <img src="images/browser.png" class="browserimg" />
@@ -191,10 +177,10 @@
     </header>
     <section id="containerPic">
 
-      <div id="blackBox">
+      <!-- <div id="blackBox">
         <img src="images/howtohuloop.png" alt="howtohuloop" id="howtohuloop">
-      </div>
-          <div id="page-wrap">
+      </div> -->
+          <!-- <div id="page-wrap">
             <p id="name-area"></p>
           
             <div id="chat-wrap">
@@ -203,18 +189,46 @@
                 </div>
             </div>
 
-            <form id="send-message-area">
+             <form id="send-message-area">
               <p id="message">Your message:</p>
               <textarea id="sendie" maxlength="100"></textarea>
             </form>
           
-        </div>
+        </div> -->
         <!-- <img
           src="images/watchmen1.jpg"
           alt="picture"
           width="40%"
           height="300px"
         /> -->
+        <div id="peopleList">
+          <div id="img1">
+          <img src="images/avatar.Elnaz.jpg" class="avatar1">
+          <p class="nameAvatar">Elnaz</p>
+        </div>
+        <div id="img2">
+          <img src="images/avatar.Tracey.jpg" class="avatar2">
+          <p class="nameAvatar">Tracey</p>
+        </div>
+        <div id="img3">
+          <img src="images/avatar.Kathy.jpg"class="avatar3">
+          <p class="nameAvatar">Kathy</p>
+        </div>
+        </div>
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
         <div id="center">
          
                 <img src="images/hulu.white.png" class="huluP">
@@ -282,9 +296,12 @@
     </section>
     <section id="sec3">
       <div id="calendar">
-        <img src="images/googlecalendar.png" class="googleCal">
-        <img src="images/outlook.png" class="outlookCal">
-        <img src="images/applecalendar.png" class="appleCal">
+        <a href="https://calendar.google.com/">
+        <img src="images/googlecalendar.png" class="googleCal"></a>
+        <a href="https://office.live.com/start/Calendar.aspx?ui=en%2DUS&rs=US">
+        <img src="images/outlook.png" class="outlookCal"></a>
+        <a href="https://www.calendar.com/apple-calendar/">
+        <img src="images/applecalendar.png" class="appleCal"></a>
       </div>
       <div id="syncCal">
         <p id="syncCal1">Sync with your</p>

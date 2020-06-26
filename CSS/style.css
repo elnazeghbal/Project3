@@ -628,20 +628,21 @@ width: 50%;
 
 #peopleList{
   float: right;
-
-  width: 15%;
-  height: 35%;
-  background-color: white;
-  border-color: #1CE783;
+ width: 13%;
+  height: 50%;
+  background-color: rgb(24, 23, 23);
+  border-color: rgb(43, 44, 43);
 margin-top: 10em;
   flex-direction: column;
+  margin-left: 1em;
 }
 .nameAvatar{
   float: right;
+  color: white;
 }
 .avatar1{
   float: left;
-  width: 30%;
+  width: 40%;
 }
 .avatar2{
   float: left;
@@ -654,17 +655,21 @@ margin-top: 10em;
 #img1{
   width: 50%;
   flex-direction: row;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 #img2{
   width: 50%;
-  margin-top: 4em;
+  margin-top: 5em;
   margin-right: 2em;
+  margin-left: 1em;
   flex-direction: row;
 }
 #img3{
 width: 50%;
   margin-top: 9em;
   margin-right: 2em;
+  margin-left: 1em;
   flex-direction: row;
 }
 
@@ -684,7 +689,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 28px;
   width: 100px;
   height: 50px;
-  margin-top: 25em;
+  margin-left: 4em;
+  margin-top: 2em;
 }
 
 /* The popup chat - hidden by default */
@@ -695,9 +701,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
-  margin-right: 7em;
+
   height: 200px;
-  margin-top: 6em;
+  margin-top: 10em;
 }
 
 /* Add styles to the form container */
@@ -730,10 +736,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn {
   background-color: #4CAF50;
   color: white;
-  padding: 16px 20px;
+
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
   margin-bottom:10px;
   opacity: 0.8;
 }

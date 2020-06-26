@@ -639,6 +639,8 @@ margin-top: 10em;
 .nameAvatar{
   float: right;
   color: white;
+  font-size: 15px;
+  font-family: "Avenier";
 }
 .avatar1{
   float: left;
@@ -678,7 +680,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
+  background-color: #1CE783;
   color: white;
   /* padding: 16px 20px; */
   border: none;
@@ -687,9 +689,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   /* position: fixed; */
   /* bottom: 23px; */
   right: 28px;
-  width: 100px;
-  height: 50px;
-  margin-left: 4em;
+  width: 70px;
+  height: 40px;
+  margin-left: 5em;
   margin-top: 2em;
 }
 
@@ -734,12 +736,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Set a style for the submit/send button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #1CE783;
   color: white;
-
+height: 30%;
   border: none;
   cursor: pointer;
-  width: 60%;
+  width: 50%;
   margin-bottom:10px;
   opacity: 0.8;
 }

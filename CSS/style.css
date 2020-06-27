@@ -134,7 +134,7 @@ margin-top: 6em;
 .huluP{
   color: #1CE783;
  float: right;
- margin-top: 0.1em;
+ margin-top: 1.1em;
  margin-right: 18.5em;
   width: 50px;
   
@@ -149,7 +149,7 @@ margin-top: 6em;
   margin-top: 0.75em;
  
 }
-p {
+.sec1P{
   font-size: large;
 }
 h5 {
@@ -157,87 +157,17 @@ h5 {
   font-weight: 400px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  margin-right: 3em;
 }
 
 #howtohuloop{
   float: center;
-  width: 300px;
+  width: 250px;
   height: 300px;
-
-}
-
-/* send Message
-*                              
- { margin: 0;
-   padding: 0; }
-/* body {                         
-  font-family: 'Avenir';
-    background: url(images/bg.png);
-   } */
-/* h6                           
-{ color: #fa9f00; 
-  font: 30px Helvetica, Sans-Serif;
-   margin: 0 0 10px 0;
-   }
-#page-wrap                     
- { width: 200px; 
-
-  position: relative; 
-  float: right;
-  margin-left: 0.1em;
   margin-top: 10em;
-  background: black; */
+  margin-right: 10em;
 
-/* }
-#message{
-  color: #1CE783;
 }
-
-#chat-wrap                     
- { border: 1px solid rgb(22, 21, 21);
-   margin: 0 0 15px 0;
- }
-#chat-area                     
- { height: 224px; 
-overflow: auto;
-   border: 1px solid #666; 
-   padding: 20px; 
-   background: black;
-   float: right;
-   } */
-/* #chat-area span               
-  { color: rgb(32, 31, 31); 
-    background: rgb(0, 0, 0);
-     padding: 4px 8px;
-      -moz-border-radius: 5px; 
-      -webkit-border-radius: 8px; 
-      margin: 0 5px 0 0; }
-#chat-area p                   
- { padding: 8px 0; 
-  border-bottom: 1px solid rgb(12, 11, 11); }
-
-#name-area                     
- { position: absolute; 
-  top: 12px;
-   right: 0;
-    color: black;
-     font: bold 12px "Lucida Grande", Sans-Serif; 
-     text-align: right; }   
-#name-area span                
- { color: #fa9f00; } */
-
-/* #send-message-area p         
-   { float: left; 
-    color: black;
-     padding-top: 27px; 
-     font-size: 14px; }
-#sendie                        
- { border: 3px solid black; 
-  width: 196px;
-
-   font: 12px "avenir"; 
-   float: right; }  */
-
 
   #huloopButton{
     float: left;
@@ -446,7 +376,7 @@ height: 400px;
       overflow: auto;
       white-space: nowrap;
       float: right;
-      margin-top: -14em;
+      margin-top: -17em;
       margin-right: 22em;
   }
   
@@ -461,7 +391,7 @@ margin-top: -0.3em;
 width: auto;
 }
 #calendar{
-  margin-top: 10em;
+  margin-top: 16em;
   float: left;
   width: 50%;
   flex-direction: row;
@@ -548,6 +478,7 @@ margin-top: 4.5em;
 }
 .calLaptopExp{
   width: 55%;
+  margin-top: 5em;
 }
 #buttonLaptop{
   background-color: #1CE783;
@@ -595,22 +526,26 @@ width: 50%;
   width: auto;
   flex-direction: row;
 }
+
+#footer2{
+margin-top: -1.5em;
+}
 #footer1 p{
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   flex-direction: row;
-  font-size: 12px;
+  font-size: 11px;
 
 }
 #footer2 p{
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   flex-direction: row;
-  font-size: 12px; 
+  font-size: 11px; 
 
 }
 #footerRight p{
@@ -619,8 +554,8 @@ width: 50%;
   padding: 14px;
   flex-direction: row;
   font-size: 12px; 
-  margin-top: -2em;
-  margin-right: 7em;
+  margin-top: -4em;
+  margin-right: 2em;
 }
 
 
@@ -634,6 +569,7 @@ width: 50%;
   border-color: rgb(43, 44, 43);
 margin-top: 10em;
   flex-direction: column;
+  margin-left: -10em;
 
 }
 .nameAvatar{
@@ -674,9 +610,19 @@ width: 50%;
   margin-left: 1em;
   flex-direction: row;
 }
+#listName{
+  flex-direction: column;
+  height: 220px;
+  overflow: auto;
+  white-space: nowrap;
+  margin-top: 8.5em;
+}
+div.listName .container{
+  display: inline-block;
+}
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+
+
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
@@ -693,6 +639,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   height: 40px;
   margin-left: 5em;
   margin-top: 2em;
+  text-align: center;
 }
 
 /* The popup chat - hidden by default */
@@ -701,36 +648,42 @@ body {font-family: Arial, Helvetica, sans-serif;}
   /* position: fixed; */
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  /* border: 3px solid #f1f1f1; */
   z-index: 9;
-
-  height: 200px;
-  margin-top: 10em;
+  width: 200px;
+  height: 100px;
+  margin-top: -4em;
+  margin-left: 13em;
+}
+.names{
+  font-size: 15px;
+  color: white;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 150px;
+  max-width: 200px;
   height: 150px;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(236, 236, 236);
 }
 
 /* Full-width textarea */
 .form-container textarea {
-  width: 100%;
+  /* width: 120%; */
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: #181818;
+  color: white;
   resize: none;
-  min-height: 150px;
-  margin-top: -4em; 
+  min-height: 80px;
+  /* margin-top: -1.5em;  */
 }
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #ddd;
+  background-color: black;
   outline: none;
 }
 
@@ -738,11 +691,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn {
   background-color: #1CE783;
   color: white;
-height: 30%;
+height: 20%;
   border: none;
   cursor: pointer;
-  width: 50%;
-  margin-bottom:10px;
+  width: 40%;
   opacity: 0.8;
 }
 
@@ -763,20 +715,16 @@ height: 30%;
   content: "";
   clear: both;
   display: block;
+  font-size: 15px;
+  font-family: "Avenier";
+}
+.p{
+font-size: 15px;
+font-family: "Avenier";
 }
 
 [class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
+  float: top;
   padding: 15px;
 }
 
@@ -799,7 +747,7 @@ html {
 }
 
 .aside {
-  background-color: #33b5e5;
+
   padding: 15px;
   color: #ffffff;
   text-align: center;
@@ -807,13 +755,67 @@ html {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.footer {
+/* .footer {
   background-color: #0099cc;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
   padding: 15px;
+} */
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #1f1e1e;
+  /* border-radius: 5px; */
+width: 240px;
+height: 60px;
+margin-top: 3em;
+color: white;
+
 }
+.leftimg{
+  width: 20%;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: rgb(27, 26, 26);
+  margin-top: -0.1em;
+  color: white;
+  float: right;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 40px;
+  /* width: 60%; */
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+  width: 20%;
+}
+
+/* .time-right {
+  float: right;
+  color: #aaa;
+  width: 100%;
+} */
+
+/* .time-left {
+  float: left;
+  color: #999;
+} */
 
 /* For desktop: */
 .col-1 {width: 8.33%;}

@@ -14,13 +14,13 @@
     href="https://fonts.googleapis.com/css?family=Source Sans Pro"
     rel="stylesheet"
   />
- <link href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js">
+ <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js">
   <link href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
-  <meta name="author" content="Stephan Soller" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+ 
+   <meta name="author" content="Stephan Soller" />
 <form id="RegisterUserForm" action="index.php" method="post"></form>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
 
 
   <style>
@@ -101,31 +101,6 @@
   color: white;
 }
   </style>
-  <script>
-    $(document).ready(function () {
-      $(".hide").click(function () {
-        $(".p1").slideUp(1500);
-      });
-    });
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-168986272-1");
-  </script>
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-    
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -177,6 +152,8 @@
     </header>
     <section id="containerPic">
  <div id="blackBox">
+
+  </div>
         <img src="images/howtohuloop.png" alt="howtohuloop" id="howtohuloop">
       </div> 
         <div id="peopleList">
@@ -194,18 +171,61 @@
         </div>
         
         <button class="open-button" onclick="openForm()">Chat</button>
+        <div class="chat-popup" id="myForm">
+          <form class="form-container" name="theForm">
+              <label for="msg">
+              <textarea placeholder="Type your message.." name="msg" required Id="myTextarea"></textarea>
+              <button type="button" class="btn" onclick="sendMessage()">Send</button>
+ 
+          </form>
       </div>
+      </div>
+      <div id="listName">
+      <div class="container">
+        <img src="images/avatar.Elnaz.jpg" alt="Avatar" class="leftimg">
+        <p class="names">Hello Kathy</p>
+    </div>
+    <div class="container darker">
+        <img src="images/avatar.Kathy.jpg" alt="Avatar" class="right">
+        <p class="names">Hey! Elnaz. </p>
+    </div>
+  </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+        var globalNum1 = 0;
+        function sendMessage() {
+            globalNum1 = globalNum1 + 1;
+            var newDiv = document.createElement("div");
+            var img = document.createElement("img");
 
-    <button type="submit" class="btn">Send</button>
-  </form>
-</div>
+            if (globalNum1 % 2 == 0) {
+                img.src = "images/avatar.Elnaz.jpg";
+                newDiv.className = "container darker";
+                img.className = "right";
+            } else {
+                img.src = "images/avatar.Kathy.jpg";
+                newDiv.className = "container";
+            }
+            newDiv.appendChild(img);
+            var newContent = document.createElement("p");
+            newContent.innerText = document.getElementById("myTextarea").value
+            newDiv.appendChild(newContent);
+            // var span = document.createElement('span');
+            // span.className = "time-left";
+            // var today = new Date();
+            // span.innerText = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            // newDiv.appendChild(span);
+            // document.div.appendChild(newDiv);
+            document.getElementById("listName").appendChild(newDiv);
+        }
+    </script>
 
         <div id="center">
          
@@ -214,14 +234,14 @@
           
         
           <h5 id="h5Huloop">HULOOP</h5>
-          <p>Huloop is a new calendaring feature on Hulu that allows</p>
-          <p>
+          <p class="sec1P">Huloop is a new calendaring feature on Hulu that allows</p>
+          <p class="sec1P">
             you to schedule watch parties with your loved ones.
           </p>
-          <p>
+          <p class="sec1P">
             Huloop syncs with your calendar and creates a
           </p>
-          <p>personalized event to share with your family and friends.</p>
+          <p class="sec1P">personalized event to share with your family and friends.</p>
         
         
           <div id="huloopButton">
@@ -267,7 +287,8 @@
         </a>
         </div>
             <div id="scrollmenu">
-                   <img src="images/watchdirectly2.png">
+                   <img src="images/watchdirectly4.png">
+                   <img src="images/watchdirectly5.png">
                    <img src="images/watchdirectly.png">
                 </div>
              
